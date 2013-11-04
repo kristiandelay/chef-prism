@@ -1,0 +1,15 @@
+{
+  "name": "prism_dashboard",
+  "description": "Sensu monitoring cookbook wrapper",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[sensu::dashboard_service]"
+  ],
+  "env_run_lists": {
+  }
+}

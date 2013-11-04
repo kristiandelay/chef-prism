@@ -1,0 +1,21 @@
+{
+  "name": "prism_client",
+  "description": "Sensu monitoring cookbook wrapper",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "sensu": {
+      "use_embedded_ruby": true
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[sensu::default]",
+    "recipe[prism::client]",
+    "recipe[sensu::client_service]",
+    "recipe[prism::plugins]"
+  ],
+  "env_run_lists": {
+  }
+}
