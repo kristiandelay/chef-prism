@@ -2,8 +2,8 @@ Example wrapper cookbook for the Sensu monitoring framework. Written for the Dev
 
 # Useful scripts
 
-+ ```sensu-basic-mon``` make sure Sensu is functional
-+ ```rabbitmq-delete-unconsumed-queues.rb``` sadly necessary, in some cases, some queues end up with no consumers
++ [sensu-basic-mon](https://github.com/failshell/scripts/blob/master/sensu/sensu-basic-mon) make sure Sensu is functional
++ [rabbitmq-delete-unconsumed-queues.rb](https://github.com/failshell/scripts/blob/master/sensu/rabbitmq-delete-unconsumed-queues.rb) sadly necessary, in some cases, some queues end up with no consumers
 
 # Author
 
