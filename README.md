@@ -1,5 +1,7 @@
 Example wrapper cookbook for the Sensu monitoring framework. Written for the DevOpsMTL meeting on Nov. 4th, 2013.
 
+The slides can be found [here](https://speakerdeck.com/failshell/dynamic-monitoring-using-chef-sensu-and-graphite).
+
 # Useful scripts
 
 + [sensu-basic-mon](https://github.com/failshell/scripts/blob/master/sensu/sensu-basic-mon) make sure Sensu is functional
