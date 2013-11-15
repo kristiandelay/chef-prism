@@ -44,6 +44,7 @@ Vagrant.configure("2") do |global_config|
       case name
         when 'server'
           config.vm.network :forwarded_port, guest: 8080, host: 8088
+          config.vm.network :forwarded_port, guest: 4567, host: 8888
         when 'graphite'
           config.vm.network :forwarded_port, guest: 80, host: 8880
       end
@@ -56,6 +57,7 @@ Vagrant.configure("2") do |global_config|
         chef.run_list = options['run_list']
         chef.json = {
           "sensu" => {
+            "version" => "0.12.1-1",
             "use_embedded_ruby" => true,
             "rabbitmq" => {
               "host" => "10.20.30.40"

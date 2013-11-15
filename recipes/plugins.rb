@@ -21,7 +21,7 @@ git '/etc/sensu/sensu-community-plugins' do
   reference 'master'
 end
 
-%w(extensions plugins mutators handlers).each do |dir|
+%w(plugins mutators handlers).each do |dir|
   directory "/etc/sensu/#{dir}" do
     action :delete
     not_if { ::File.symlink?("/etc/sensu/#{dir}") }
